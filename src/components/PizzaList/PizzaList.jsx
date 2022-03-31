@@ -14,10 +14,8 @@ function PizzaList({getPizza}) {
                         return (
                             <PizzaItem 
                                 key={pizza.id}
-                                name={name}
-                                description={description}
-                                price={price}
-                                image_path={image_path}
+                                getPizza={getPizza}
+                                pizza={pizza}
                             />
                         );
                     })}
