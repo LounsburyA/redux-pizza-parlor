@@ -16,7 +16,7 @@ dispatch ({type: 'ADD_TO_CART', payload: pizza})
             <td>{pizza.name}</td>
             <td>{pizza.description}</td>
             <td>{pizza.price}</td>
-            <td> <img src={pizza.image_path}/> </td>
+            <td> <img class= 'image'src={pizza.image_path}/> </td>
             <td>
                 <button onClick={handleAddPizza}>Add</button>
             </td>
