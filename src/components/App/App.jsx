@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import './App.css';
 import {useState, useEffect} from 'react';
+import PizzaList from '../PizzaList/PizzaList';
 
 import {useDispatch} from 'react-redux';
 
@@ -33,7 +34,9 @@ dispatch({type: 'SET_PIZZA_LIST', payload: response.data})
   
       <img src='images/pizza_photo.png' />
       <p>Pizza is great.</p>
-  
+
+      <PizzaList getPizza={getPizza} />
+
     </div>
   );
 }
