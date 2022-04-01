@@ -17,20 +17,11 @@ const pizzaReducer = (state = [], action) => {
 const addPizzaReducer = (state = [], action) => {
     if (action.type === 'ADD_TO_CART') {
         console.log('here is payload', action.payload);
-        
         return [...state, action.payload];
-
-      
-        
-    }else(action.type === 'REMOVE_ITEM');{
-        return state.filter(pizza=> pizza.id !== action.payload.id)
+    } else if (action.type === 'REMOVE_ITEM'){
+        return state.filter(pizza => pizza.id !== action.payload.id)
     }
-    
-   // return state;
-
-              
-    } return state;
-
+    return state;
 }
 
 const totalPriceReducer = (state = 0, action) => {

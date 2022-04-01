@@ -33,35 +33,20 @@ function PizzaItem({ getPizza, pizza }) {
 
 
     return (
-<>
+        <>
 
-        <tr>
-            <td>{pizza.name}</td>
-            <td className='desc'>{pizza.description}</td>
-            <td>{pizza.price}</td>
+            <tr>
+                <td>{pizza.name}</td>
+                <td className='desc'>{pizza.description}</td>
+                <td>{pizza.price}</td>
 
-            <td> <img className='img' src={pizza.image_path} /> </td>
-            {/* {/* <td> */}
-            <div onClick={handleShow}>
-                {isShowing ? <button onClick={handleRemove}>Remove</button> : <button onClick={handleAddPizza}>Add</button>}
-            </div>
-            <td>
-                {/* <button onClick={handleAddPizza}>Add</button> */}
-
-            </td>
-            <td>
-                {/* <button onClick ={handleRemove}>Remove</button> */}
-            </td>
-
-
-            <td> <img className= 'image' src={pizza.image_path}/> </td>
-            <td><button onClick={handleAddPizza}>Add</button></td>
-
-
-        </tr>
-
-
-</>
+                <td> <img className='img' src={pizza.image_path} /> </td>
+                {/* {/* <td> */}
+                <div onClick={handleShow}>
+                    {isShowing ? <button onClick={handleRemove}>Remove</button> : <button onClick={handleAddPizza}>Add</button>}
+                </div>
+            </tr>
+        </>
     );
 }
 
