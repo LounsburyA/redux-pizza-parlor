@@ -27,10 +27,13 @@ function PizzaForm({ getPizza }) {
                 required
                 placeholder="Zip"
             />
-
-            <input type="radio" id="html" name="Pickup" value="HTML"/>
-            <input type="radio" id="html" name="Delivery" value="HTML"/>
-
+            <div>
+            <input type="radio" id="html" name="Pickup" value="HTML"/> <label for="Pickup">Pickup</label>
+            </div>
+            
+            <div>
+            <input type="radio" id="html" name="Delivery" value="HTML"/> <label for="Delivery">Delivery</label>
+            </div>
 
 
                 <button type="submit">
