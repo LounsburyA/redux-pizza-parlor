@@ -32,6 +32,11 @@ function PizzaItem({ getPizza, pizza }) {
 
 
 
+
+
+    
+
+
     return (
         <>
 
@@ -47,6 +52,7 @@ function PizzaItem({ getPizza, pizza }) {
                 </div>
             </tr>
         </>
+
     );
 }
 
