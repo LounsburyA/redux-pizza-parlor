@@ -16,21 +16,27 @@
   justify-content: center;
 }
 
+
 .image {
+
 padding: 2px;
 height: 200px;
 width: 200px;
 
 }
-/* .desc {
+.desc {
 padding: 2px;
 height: 200px;
 width: 200px;
-} */
+
+}
+
+
 
 .Total {
   display: flex;
   justify-content: right;
   margin-right: 4em;
 }
+
 
