@@ -7,6 +7,7 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import logger from 'redux-logger'
 
 
+
 const pizzaReducer = (state = [], action) => {
     if (action.type === 'SET_PIZZA_LIST') {
         return action.payload
@@ -18,19 +19,33 @@ const addPizzaReducer = (state = [], action) => {
         console.log('here is payload', action.payload);
         
         return [...state, action.payload];
+
       
         
     }else(action.type === 'REMOVE_ITEM');{
         return state.filter(pizza=> pizza.id !== action.payload.id)
     }
     
+   // return state;
+
+              
+    } return state;
+
+}
+
+const totalPriceReducer = (state = 0, action) => {
+    if (action.type === 'SET_TOTAL_PRICE') {
+        console.log('totalPriceReducer =', action.payload);
+        return action.payload
+    }
     return state;
 }
 
 const storeInstance = createStore(
     combineReducers({
         pizzaReducer,
-        addPizzaReducer
+        addPizzaReducer,
+        totalPriceReducer
     }),
     applyMiddleware(logger),
 );

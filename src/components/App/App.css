@@ -12,8 +12,13 @@
 
 .App-title {
   font-size: 2em;
+  display: flex;
+  justify-content: center;
 }
-.img {
+
+
+.image {
+
 padding: 2px;
 height: 200px;
 width: 200px;
@@ -23,4 +28,15 @@ width: 200px;
 padding: 2px;
 height: 200px;
 width: 200px;
+
 }
+
+
+
+.Total {
+  display: flex;
+  justify-content: right;
+  margin-right: 4em;
+}
+
+

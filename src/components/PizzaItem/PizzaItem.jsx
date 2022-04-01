@@ -8,6 +8,7 @@ function PizzaItem({ getPizza, pizza }) {
 
     const dispatch = useDispatch();
 
+
     const [isShowing, setIsShowing] = useState(false);
 
     const handleAddPizza = () => {
@@ -30,6 +31,7 @@ function PizzaItem({ getPizza, pizza }) {
     }
 
 
+
     return (
 <>
 
@@ -37,6 +39,7 @@ function PizzaItem({ getPizza, pizza }) {
             <td>{pizza.name}</td>
             <td className='desc'>{pizza.description}</td>
             <td>{pizza.price}</td>
+
             <td> <img className='img' src={pizza.image_path} /> </td>
             {/* {/* <td> */}
             <div onClick={handleShow}>
@@ -49,6 +52,12 @@ function PizzaItem({ getPizza, pizza }) {
             <td>
                 {/* <button onClick ={handleRemove}>Remove</button> */}
             </td>
+
+
+            <td> <img className= 'image' src={pizza.image_path}/> </td>
+            <td><button onClick={handleAddPizza}>Add</button></td>
+
+
         </tr>
 
 
@@ -56,4 +65,4 @@ function PizzaItem({ getPizza, pizza }) {
     );
 }
 
-export default PizzaItem; 
+export default PizzaItem;
