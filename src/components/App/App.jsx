@@ -3,7 +3,7 @@ import axios from 'axios';
 import './App.css';
 import { useState, useEffect } from 'react';
 import PizzaList from '../PizzaList/PizzaList';
-
+import { useSelector } from 'react-redux';
 import PizzaForm from '../PizzaForm/PizzaForm';
 import PizzaCheckout from '../PizzaCheckout/PizzaCheckout';
 import { useDispatch } from 'react-redux';
@@ -29,12 +29,13 @@ function App() {
 
   };
 
+  const cost = useSelector(state => state.totalPriceReducer)
 
   return (
     <Router>
       <div className='App'>
         <header className='App-header'>
-          <h1 className='App-title'>Prime Pizza</h1>
+        <span className='App-title'>Prime Pizza</span><span className='Total'>Total : ${cost}</span>
         </header>
         <nav>
           <ul>

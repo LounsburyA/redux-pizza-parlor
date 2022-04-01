@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  margin-left: 25vh;
+  margin-right: 25vh;
 }
 
 .App-header {
@@ -16,8 +18,7 @@
   justify-content: center;
 }
 
-
-.image {
+.img {
 
 padding: 2px;
 height: 200px;
@@ -30,8 +31,6 @@ height: 200px;
 width: 200px;
 
 }
-
-
 
 .Total {
   display: flex;

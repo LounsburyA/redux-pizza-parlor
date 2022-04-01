@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import axios from 'axios';
+import { HashRouter as Router, Route, Link } from 'react-router-dom';
 
 function PizzaForm({ getPizza }) {
-
 
     return (
         <section>
@@ -36,9 +36,9 @@ function PizzaForm({ getPizza }) {
             </div>
 
 
-                <button type="submit">
+            <Link to='/addPizzaCheckout'><button type="submit">
                     NEXT
-                </button>
+                </button></Link>
 
         </section>
     );
