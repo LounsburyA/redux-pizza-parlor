@@ -22,7 +22,6 @@ function PizzaCheckout() {
     return (
         <div>
             <h2>Checkout</h2>
-            <h4>Total Pizza in Cart : ${cost}</h4>
             <table>
                 <tbody>                
                         {cartList.map((cartItem) => {
@@ -35,6 +34,7 @@ function PizzaCheckout() {
                         })}
                 </tbody>
             </table>
+            <button>Checkout</button>
         </div>
     )
 }
