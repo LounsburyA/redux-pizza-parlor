@@ -31,7 +31,7 @@ function PizzaItem({ getPizza, pizza }) {
 
 
     return (
-
+<>
 
         <tr>
             <td>{pizza.name}</td>
@@ -52,6 +52,7 @@ function PizzaItem({ getPizza, pizza }) {
         </tr>
 
 
+</>
     );
 }
 

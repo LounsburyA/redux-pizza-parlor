@@ -7,6 +7,7 @@ function PizzaList({getPizza}) {
     const pizzaList = useSelector(state => state.pizzaReducer)
 
     return(
+        <>
         <div>
             <table>
                 <tbody>
@@ -22,6 +23,8 @@ function PizzaList({getPizza}) {
                 </tbody>
             </table>
         </div>
+        <button>NEXT</button>
+        </>
     )
 
 }
